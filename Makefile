@@ -5,7 +5,7 @@ CometSearch = CometSearch
 LIBDIVSUFSORT = CometSearch/libdivsufsort
 
 ifeq (${OS}, Windows_NT)
-LIBDIVSUFSORT = SapphireSearch/libdivsufsort/Windows
+LIBDIVSUFSORT = CometSearch/libdivsufsort/Windows
 endif
 
 ifeq (${BUILD}, DEBUG)
