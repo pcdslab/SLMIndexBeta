@@ -4,6 +4,10 @@ MSTOOLKIT = MSToolkit
 CometSearch = CometSearch
 LIBDIVSUFSORT = CometSearch/libdivsufsort
 
+ifeq (${OS}, Windows_NT)
+LIBDIVSUFSORT = SapphireSearch/libdivsufsort/Windows
+endif
+
 ifeq (${BUILD}, DEBUG)
  BUILD_FLAGS = -O0 -g -Wno-unused-result
 else
@@ -18,7 +22,7 @@ EXECNAME = comet.exe
 OBJS = Comet.o
 DEPS = CometSearch/CometData.h CometSearch/CometDataInternal.h CometSearch/CometPreprocess.h CometSearch/CometWriteOut.h CometSearch/CometWriteSqt.h CometSearch/OSSpecificThreading.h CometSearch/CometMassSpecUtils.h CometSearch/CometSearch.h CometSearch/CometWritePepXML.h CometSearch/CometWriteTxt.h CometSearch/Threading.h CometSearch/CometPostAnalysis.h CometSearch/SLMIndex.h CometSearch/CometSearchManager.h CometSearch/CometWritePercolator.h CometSearch/Common.h CometSearch/ThreadPool.h CometSearch/CometMassSpecUtils.cpp CometSearch/CometSearch.cpp CometSearch/CometWritePepXML.cpp CometSearch/CometWriteTxt.cpp CometSearch/CometPostAnalysis.cpp CometSearch/SLMIndex.cpp CometSearch/CometSearchManager.cpp CometSearch/CometWritePercolator.cpp CometSearch/Threading.cpp CometSearch/CometPreprocess.cpp CometSearch/CometWriteOut.cpp CometSearch/CometWriteSqt.cpp
 
-LIBPATHS = -L$(MSTOOLKIT) -L$(CometSearch)
+LIBPATHS = -L$(MSTOOLKIT) -L$(CometSearch) -L$(LIBDIVSUFSORT)
 LIBS = -lcometsearch -lmstoolkitlite -lm -lpthread -ldivsufsort
 ifdef MSYSTEM
    LIBS += -lws2_32
