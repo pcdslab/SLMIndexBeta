@@ -25,7 +25,7 @@
 bool *CometSearch::_pbSearchMemoryPool;
 bool **CometSearch::_ppbDuplFragmentArr;
 
-#define BMARK
+#undef BMARK
 #define MATCHES_REQD(x)                  (((x)*(g_staticParams.dPercentMatches))/100.0)
 #define STEP                             5000
 #define CUSHION                          50

@@ -1,6 +1,12 @@
 CXX = g++
 GCC = gcc
 MSTOOLKIT = ../MSToolkit
+DIVSUFSORT=./libdivsufsort
+
+ifeq (${OS}, Windows_NT)
+DIVSUFSORT = .libdivsufsort/Windows
+endif
+
 override CXXFLAGS += ${BUILD_FLAGS} -std=c++11 -Wall -Wextra -Wno-write-strings -static -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -DGCC -I$(MSTOOLKIT)/include
 
 COMETSEARCH = Threading.o CometInterfaces.o CometSearch.o CometPreprocess.o CometPostAnalysis.o CometMassSpecUtils.o CometWriteOut.o CometWriteSqt.o CometWritePepXML.o CometWritePercolator.o CometWriteTxt.o CometSearchManager.o SLMIndex.o
@@ -37,4 +43,4 @@ CometInterfaces.o:      CometInterfaces.cpp Common.h CometData.h CometDataIntern
 	${CXX} ${CXXFLAGS} CometInterfaces.cpp -c
 
 SLMIndex.o: SLMIndex.cpp SLMIndex.h Common.h CometData.h CometDataInternal.h CometMassSpecUtils.h CometSearch.h CometPostAnalysis.h CometWriteOut.h CometWriteSqt.h CometWriteTxt.h CometWritePepXML.h CometWritePercolator.h Threading.h ThreadPool.h CometSearchManager.h CometInterfaces.h libdivsufsort/divsufsort.h libdivsufsort/lfs.h libdivsufsort/config.h
-	${CXX} ${CXXFLAGS} -fopenmp SLMIndex.cpp -I ./libdivsufsort -c 
+	${CXX} ${CXXFLAGS} -fopenmp SLMIndex.cpp -I $(DIVSUFSORT) -c 
