@@ -19,7 +19,7 @@ Assuming <lds> is the path to libdivsufsort home,
 1. Navigate to <lds>/build/lib/CMakeFiles/divsufsort.dir
 2. Execute the command: `ar rcs libdivsufsort.a`
 3. Copy the libdivsufsort.a to <slmindexbeta>/CometSearch/libdivsufsort
-4. Also copy the divsufsort.h, config.h and lfs.h from the installed directory to <slmindexbeta./CometSearch/libdivsufsort
+4. Also copy the divsufsort.h, config.h and lfs.h from the installed directory to <slmindexbeta>/CometSearch/libdivsufsort
 
 ### Windows
 You will need Eclipse C/C++ IDE and MinGW GCC/G++ to build a SLM-Index compatible libdivsufsort.
@@ -42,4 +42,4 @@ You will need Eclipse C/C++ IDE and MinGW GCC/G++ to build a SLM-Index compatibl
 1. Unzip the <slmindexbeta>/samples/rat.tar.gz -> ratNew2cleavages.fasta
 2. Traverse to <slmindexbeta>/output/bin directory and execute: `cp ../../samples/comet.params ./`
 3. Run: `./comet.exe ../../samples/*.ms2`
-3. The results (PIN and PEPXML) files will be placed in <slmindexbeta./samples directory
+3. The results (PIN and PEPXML) files will be placed in <slmindexbeta>/samples directory
