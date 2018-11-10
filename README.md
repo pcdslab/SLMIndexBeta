@@ -40,7 +40,6 @@ You will need Eclipse C/C++ IDE and MinGW GCC/G++ to build a SLM-Index compatibl
 
 # How to Run Sample
 1. Unzip the <slmindexbeta>/samples/rat.tar.gz -> ratNew2cleavages.fasta
-2. Traverse to <slmindexbeta>/output/bin directory and execute:
-`cp ../../samples/comet.params ./`
-`./comet.exe ../../samples/*.ms2`
-3. The resultant PIN and PEPXML files will be placed in <slmindexbeta./samples directory
+2. Traverse to <slmindexbeta>/output/bin directory and execute: `cp ../../samples/comet.params ./`
+3. Run: `./comet.exe ../../samples/*.ms2`
+3. The results (PIN and PEPXML) files will be placed in <slmindexbeta./samples directory
