@@ -61,4 +61,4 @@ You will need Eclipse C/C++ IDE and MinGW GCC/G++ to build a SLM-Index compatibl
 4. The num_threads paramter controls the number of threads that can be used for indexing. The querying is restricted to 1 core.
 
 # Please cite us if you use our work
-For queries about SLM-Index, please contact: fsaeed@fiu.edu or mhaseeb@fiu.edu. Thanks
+For queries about SLM-Index Beta v0.7 (Comet), please contact: fsaeed@fiu.edu or mhaseeb@fiu.edu. Thanks
