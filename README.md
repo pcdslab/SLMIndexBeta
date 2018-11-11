@@ -22,13 +22,13 @@ Assuming /lds is the path to libdivsufsort home,
 ### Windows
 You will need Eclipse C/C++ IDE and MinGW GCC/G++ to build a SLM-Index compatible libdivsufsort.
 1. open Windows Powershell
-2. Navigate to <lds> and execute `mkdir build` and then `cd build`
-3. Navigate to <lds> and execute `cmake -DCMAKE_BUILD_TYPE="Release" -DCMAKE_INSTALL_PREFIX="../../" -G "Eclipse CDT4 - MinGW Makefiles" ..`
+2. Navigate to /lds and execute `mkdir build` and then `cd build`
+3. Navigate to /lds and execute `cmake -DCMAKE_BUILD_TYPE="Release" -DCMAKE_INSTALL_PREFIX="../../" -G "Eclipse CDT4 - MinGW Makefiles" ..`
 4. Open Eclipse, right click anywhere in the "Project Explorer" and "Import".
-5. Put the path to <lds>/build and import the project.
+5. Put the path to /lds/build and import the project.
 6. Right click on the project and build the project.
 7. Copy the built lib/libdivsufsort.dll.a and paste as /slmindexbeta/CometSearch/libdivsufsort/Windows/libdivsufsort.a
-8. Also copy the include/lfs.h, config.h and divsufsort.h to <slmindexbeta>/CometSearch/libdivsufsort/Windows 
+8. Also copy the include/lfs.h, config.h and divsufsort.h to /slmindexbeta/CometSearch/libdivsufsort/Windows 
 
 # How to build SLM-Index Beta
 1. Open the Cygwin shell or Git Bash shell.
