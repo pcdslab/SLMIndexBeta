@@ -9,7 +9,8 @@ The implementation of SLM-Index v0.7beta integrated into Comet-MS v2016.03 codeb
 
 ## Install libdivsufsort
 1. Get libdivsufsort from here: https://github.com/y-256/libdivsufsort
-2. Follow the instructions to install the libdivsufsort.
+2. libdivsufsort can be configured to use OpenMP by modifying CMakeLists.txt. 
+3. Follow the instructions to install the libdivsufsort.
 
 ### Linux
 Assuming /lds is the path to libdivsufsort home,
@@ -40,3 +41,21 @@ You will need Eclipse C/C++ IDE and MinGW GCC/G++ to build a SLM-Index compatibl
 2. Traverse to /slmindexbeta>/output/bin directory and execute: `cp ../../samples/comet.params ./`
 3. Run: `./comet.exe ../../samples/*.ms2`
 4. The results (PIN and PEPXML) files will be placed in <slmindexbeta>/samples directory
+
+# How to search MS/MS data against SLM-Index
+1. Digest the proteome database using Protein Digestion Simulator or OpenMS.
+2. Remove the redundant peptide sequences in the digested database using DBToolkit.
+3. Optional: The decoy database can be generated and appended to the target database using DBToolkit
+
+## Edit the comet.params file
+1. Add the path to the database file.
+2. Configure the number and types of modifications that should be added to SLM-Index Beta.
+3. Configure the digestion parameters for SLM-Index to validate the sequences in the database file.
+4. Configure the result and output format.
+4. Configure the capacity of modified peptides that could be added to SLM-Index Beta. 
+
+### Note: 
+1. If capacity is smaller than the number of modified peptides generated from the normal peptides, SLM-Index Beta will exit and throw a error message for the user to either increase the capacity or reduce the number/types of modifications to be added.
+2. The max fragment charge: 3
+3. Max digestion mass: 65kDa
+4. The num_threads paramter controls the number of threads that can be used for indexing. The querying is restricted to 1 core.
