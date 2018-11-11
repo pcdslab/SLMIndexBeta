@@ -60,7 +60,7 @@ You will need Eclipse C/C++ IDE and MinGW GCC/G++ to build a SLM-Index compatibl
 3. Max digestion mass: 65kDa
 4. The num_threads paramter controls the number of threads that can be used for indexing. The querying is restricted to 1 core.
 
-# Disclaimer
+# Important
 This is the beta implementation of SLM-Index and does not contain full features. The purpose of this implementation is to demonstrate the integratability of SLM-Index as well as benchmark its memory footprint and query speed.
 
 # Please cite us if you use our work
