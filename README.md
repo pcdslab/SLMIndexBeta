@@ -22,7 +22,7 @@ Assuming /lds is the path to libdivsufsort home,
 ### Windows
 You will need Eclipse C/C++ IDE and MinGW GCC/G++ to build a SLM-Index compatible libdivsufsort.
 1. open Windows Powershell
-2. Navigate to <lds> and execute `mkdir build`
+2. Navigate to <lds> and execute `mkdir build` and then `cd build`
 3. Navigate to <lds> and execute `cmake -DCMAKE_BUILD_TYPE="Release" -DCMAKE_INSTALL_PREFIX="../../" -G "Eclipse CDT4 - MinGW Makefiles" ..`
 4. Open Eclipse, right click anywhere in the "Project Explorer" and "Import".
 5. Put the path to <lds>/build and import the project.
