@@ -59,6 +59,7 @@ You will need Eclipse C/C++ IDE and MinGW GCC/G++ to build a SLM-Index compatibl
 2. The max fragment charge: 3
 3. Max digestion mass: 65kDa
 4. The num_threads paramter controls the number of threads that can be used for indexing. The querying is restricted to 1 core.
+5. The key-value sort for SLM Ion Index construction is handled by libdivsufsort. Please enable OpenMP when building libdivsufsort to enable parallel sort operation.
 
 # Important
 This is the beta implementation of SLM-Index and does not contain full features. The purpose of this implementation is to demonstrate the integratability of SLM-Index as well as benchmark its memory footprint and query speed.
