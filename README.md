@@ -63,7 +63,7 @@ You will need Eclipse C/C++ IDE and MinGW GCC/G++ to build a SLM-Index compatibl
 6. The key-value sort for SLM Ion Index construction is handled by libdivsufsort. Please enable OpenMP when building libdivsufsort to enable parallel sort operation.
 
 # Important
-This is the beta implementation of SLM-Index and does not contain full features. The purpose of this implementation is to demonstrate the integratability of SLM-Index as well as benchmark its memory footprint and query speed.
+This is the beta implementation of SLM-Index and does not contain full features. The purpose of this implementation is to demonstrate the integratability of SLM-Index as well as to benchmark SLM-Index memory footprint and query speed.
 
 # Please cite us if you use our work
 For queries about SLM-Index Beta v0.7 (Comet), please contact: fsaeed@fiu.edu or mhaseeb@fiu.edu. Thank you.
