@@ -56,10 +56,11 @@ You will need Eclipse C/C++ IDE and MinGW GCC/G++ to build a SLM-Index compatibl
 
 ### Note: 
 1. If capacity is smaller than the number of modified peptides generated from the normal peptides, SLM-Index Beta will exit and throw a error message for the user to either increase the capacity or reduce the number/types of modifications to be added.
-2. The max fragment charge: 3
-3. Max digestion mass: 65kDa
-4. The num_threads paramter controls the number of threads that can be used for indexing. The querying is restricted to 1 core.
-5. The key-value sort for SLM Ion Index construction is handled by libdivsufsort. Please enable OpenMP when building libdivsufsort to enable parallel sort operation.
+2. If the set capacity is greater than the spectra/peptides in the index, the rest of the memory will automatically be released while construction of index.
+3. The max fragment charge: 3
+4. Max digestion mass: 65kDa
+5. The num_threads paramter controls the number of threads that can be used for indexing. The querying is restricted to 1 core.
+6. The key-value sort for SLM Ion Index construction is handled by libdivsufsort. Please enable OpenMP when building libdivsufsort to enable parallel sort operation.
 
 # Important
 This is the beta implementation of SLM-Index and does not contain full features. The purpose of this implementation is to demonstrate the integratability of SLM-Index as well as benchmark its memory footprint and query speed.
