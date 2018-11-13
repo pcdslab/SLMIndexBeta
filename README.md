@@ -56,7 +56,7 @@ You will need Eclipse C/C++ IDE and MinGW GCC/G++ to build a SLM-Index compatibl
 
 ### Note: 
 1. If capacity is smaller than the number of modified peptides generated from the normal peptides, SLM-Index Beta will exit and throw a error message for the user to either increase the capacity or reduce the number/types of modifications to be added.
-2. If the set capacity is greater than the spectra/peptides in the index, the rest of the memory will automatically be released while construction of index.
+2. If the set capacity is greater than the spectra/peptides in the index, the extra memory will automatically be released while construction of index.
 3. The max fragment charge: 3
 4. Max digestion mass: 65kDa
 5. The num_threads paramter controls the number of threads that can be used for indexing. The querying is restricted to 1 core.
