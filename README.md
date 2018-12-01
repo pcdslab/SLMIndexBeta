@@ -1,4 +1,4 @@
-# SLMTransform (Beta)
+# SLM-Transform (Beta)
 The implementation of SLM-Transform v0.7beta integrated into Comet-MS v2016.03 codebase
 
 # What do you need?
