@@ -1,5 +1,5 @@
-# SLMIndexBeta
-The implementation of SLM-Index v0.7beta integrated into Comet-MS v2016.03 codebase
+# SLMTransform (Beta)
+The implementation of SLM-Transform v0.7beta integrated into Comet-MS v2016.03 codebase
 
 # What do you need?
 1. make
@@ -20,7 +20,7 @@ Assuming /lds is the path to libdivsufsort home,
 4. Also copy the divsufsort.h, config.h and lfs.h from the installed directory to /slmindexbeta/CometSearch/libdivsufsort
 
 ### Windows
-You will need Eclipse C/C++ IDE and MinGW GCC/G++ to build a SLM-Index compatible libdivsufsort.
+You will need Eclipse C/C++ IDE and MinGW GCC/G++ to build a SLM-Transform compatible libdivsufsort.
 1. open Windows Powershell
 2. Navigate to /lds and execute `mkdir build` and then `cd build`
 3. Navigate to /lds and execute `cmake -DCMAKE_BUILD_TYPE="Release" -DCMAKE_INSTALL_PREFIX="../../" -G "Eclipse CDT4 - MinGW Makefiles" ..`
@@ -30,9 +30,9 @@ You will need Eclipse C/C++ IDE and MinGW GCC/G++ to build a SLM-Index compatibl
 7. Copy the built lib/libdivsufsort.dll.a and paste as /slmindexbeta/CometSearch/libdivsufsort/Windows/libdivsufsort.a
 8. Also copy the include/lfs.h, config.h and divsufsort.h to /slmindexbeta/CometSearch/libdivsufsort/Windows 
 
-# How to build SLM-Index Beta
+# How to build SLM-Transform Beta
 1. Open the Cygwin shell or Git Bash shell.
-1. Navigate to SLM-Index home directory <slmindexbeta>
+1. Navigate to SLM-Transform home directory <slmindexbeta>
 2. Execute the following command: `make -j<JOBS>`
 3. Note that in above command, you can skip the `-j <JOBS>` if working with Linux.
 
@@ -63,7 +63,7 @@ You will need Eclipse C/C++ IDE and MinGW GCC/G++ to build a SLM-Index compatibl
 6. The key-value sort for SLM Ion Index construction is handled by libdivsufsort. Please enable OpenMP when building libdivsufsort to enable parallel sort operation.
 
 # Important
-This is the beta implementation of SLM-Index and does not contain full features. The purpose of this implementation is to demonstrate the integratability of SLM-Index as well as to benchmark SLM-Index memory footprint and query speed.
+This is the beta implementation of SLM-Transform and does not contain full features. The purpose of this implementation is to demonstrate the integratability of SLM-Transform as well as to benchmark SLM-Index memory footprint and query speed.
 
 # Please cite our work
-For queries about SLM-Index Beta v0.7 (Comet), please contact: fsaeed@fiu.edu or mhaseeb@fiu.edu. Thank you.
+For queries about SLM-Transform Beta v0.7 (Comet), please contact: fsaeed@fiu.edu or mhaseeb@fiu.edu. Thank you.
