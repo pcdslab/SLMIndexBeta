@@ -65,5 +65,5 @@ You will need Eclipse C/C++ IDE and MinGW GCC/G++ to build a SLM-Index compatibl
 # Important
 This is the beta implementation of SLM-Index and does not contain full features. The purpose of this implementation is to demonstrate the integratability of SLM-Index as well as to benchmark SLM-Index memory footprint and query speed.
 
-# Please cite us if you use our work
+# Please cite our work
 For queries about SLM-Index Beta v0.7 (Comet), please contact: fsaeed@fiu.edu or mhaseeb@fiu.edu. Thank you.
